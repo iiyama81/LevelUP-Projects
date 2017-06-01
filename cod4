@@ -1,0 +1,14 @@
+'use strict';
+
+const obj = [3,4,56,24,34,545,56,3456,3456,23,4123,5,4];
+
+const findMin = (arr) => {
+	var result = arr[0];
+	for(var i=1; i <arr.length; i++){
+		result = result< arr[i] ? result:arr[i];
+	}
+return result;
+
+}
+
+console.log(findMin(obj));

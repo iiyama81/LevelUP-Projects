@@ -1,0 +1,29 @@
+'use strict';
+
+class Man{
+	constructor(firstName, secondName){
+		this.firstName = firstName;
+		this.secondName = secondName;
+		this.color = 'white';
+	}
+
+	sayName (){
+		console.log('My Name is ${this.firstName} ${this.secondName}');
+	};
+}
+
+class Woman extends Man{
+	constructor (firstName,secondName){
+		super(firstName, secondName)
+		this.age = 20;
+	}
+	sayAHA(){
+		console.log("AHA")
+	}
+sayName(){
+	super.sayName()
+	console.log("No")
+}
+
+}
+

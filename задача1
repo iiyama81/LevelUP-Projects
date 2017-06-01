@@ -1,0 +1,24 @@
+"use strict";
+
+function nonUniqueElements(data) { 
+    var res = []
+    for(let i=0; i<data.length; i++){
+    var x = data[i]
+    var y = 0
+    for(let k=0; k<data.length; k++){
+    if(data[k]==x){
+        y++
+    }
+        } 
+        
+        if(y>=2){
+            res.push(x)
+        
+        }
+
+}
+    
+    
+    
+    return res;
+}

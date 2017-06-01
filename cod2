@@ -1,0 +1,36 @@
+function n(){
+	var self = this;
+	this.test = 5;
+	var f = function (){
+		console.log(self.test)
+	}
+}
+var arr = [];
+var arr = new Array()
+Array.prototype = {
+
+};
+
+var man ={
+	name: 'Peter',
+	age: 23,
+};
+man.fn = 'hello';
+
+function Man(firstName, secondName){
+	this.firstName = firstName;
+	this.secondName = secondName;
+}
+
+Man.prototype = {
+	color: "white",
+	sayName: function(){
+		console.log("My name is ", (this.firstName + '' + this.secondName));
+	},
+	sayName1: () => {
+		console.log("My name is ",(this.firstName + '' + this.secondName));
+	}
+};
+
+var man = new Man();
+var man = new Man();

@@ -1,0 +1,17 @@
+{const testSwitch = (a)=>{
+	var str = ''
+	switch (a){
+		case 1:
+		str +='one';
+		break;
+		case 2:
+		str +='two';
+		break;
+		case 3:
+		str +='three';
+		break;
+		default:
+		str +='none';
+	}
+	return str;
+};
